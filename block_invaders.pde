@@ -245,7 +245,6 @@ class Fleet {
   
   void display() {
     if (ticks == 0 || ticks % 50 > 0) {
-      // just render as is
       Iterator<Invader> itr = invaders.iterator();
       while (itr.hasNext()) {
        Invader invader = itr.next();
@@ -288,7 +287,6 @@ class Invader {
   int ypos;
   InvaderProjectile missile;
 
-  // The Constructor is defined with arguments.
   Invader(int tempX, int tempY) { 
     xpos = tempX;
     ypos = tempY;
